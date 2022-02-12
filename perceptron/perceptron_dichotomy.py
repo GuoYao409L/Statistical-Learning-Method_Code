@@ -140,9 +140,9 @@ if __name__ == '__main__':
     start = time.time()
 
     #获取训练集及标签
-    trainData, trainLabel = loadData('../Mnist/mnist_train.csv')
+    trainData, trainLabel = loadData('../Mnist/Mnist_train.txt')
     #获取测试集及标签
-    testData, testLabel = loadData('../Mnist/mnist_test.csv')
+    testData, testLabel = loadData('../Mnist/Mnist_test.txt')
 
     #训练获得权重
     w, b = perceptron(trainData, trainLabel, iter = 30)
